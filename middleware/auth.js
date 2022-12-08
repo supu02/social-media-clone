@@ -15,7 +15,9 @@ module.exports = function (req, res, next) {
     next();
   } catch (err) {
     res.status(401).json({ msg: 'Token is not valid' });
+    print('okay');
   }
 };
+//hshah
 //export it as a function that takes in req, res and next
 //then get the token from header
